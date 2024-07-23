@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Calculator</h1>
+    </header>
+    <main>
+        <div class="calculator">
+            <div class="display">
+                <input type="text" id="display" disabled>
+            </div>
+            <div class="buttons">
+                <button class="clear" onclick="clearDisplay()" title="Clear">C</button>
+                <button class="delete" onclick="deleteLast()" title="Delete">DEL</button>
+                <button onclick="appendCharacter('/')" title="Divide">/</button>
+                <button onclick="appendCharacter('*')" title="Multiply">*</button>
+                <button onclick="appendCharacter('sin(')" title="Sine">sin</button>
+                <button onclick="appendCharacter('cos(')" title="Cosine">cos</button>
+                <button onclick="appendCharacter('tan(')" title="Tangent">tan</button>
+                <button onclick="appendCharacter('^')" title="Exponent">^</button>
+                <button onclick="appendCharacter('7')" title="7">7</button>
+                <button onclick="appendCharacter('8')" title="8">8</button>
+                <button onclick="appendCharacter('9')" title="9">9</button>
+                <button onclick="appendCharacter('-')" title="Subtract">-</button>
+                <button onclick="appendCharacter('4')" title="4">4</button>
+                <button onclick="appendCharacter('5')" title="5">5</button>
+                <button onclick="appendCharacter('6')" title="6">6</button>
+                <button onclick="appendCharacter('+')" title="Add">+</button>
+                <button onclick="appendCharacter('1')" title="1">1</button>
+                <button onclick="appendCharacter('2')" title="2">2</button>
+                <button onclick="appendCharacter('3')" title="3">3</button>
+                <button onclick="calculateResult()" class="equals" title="Equals">=</button>
+                <button onclick="appendCharacter('0')" class="zero" title="0">0</button>
+                <button onclick="appendCharacter('.')" title="Decimal">.</button>
+                <button onclick="appendCharacter('(')" title="Left Parenthesis">(</button>
+                <button onclick="appendCharacter(')')" title="Right Parenthesis">)</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Calculator. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
